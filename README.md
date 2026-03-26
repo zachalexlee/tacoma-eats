@@ -4,6 +4,22 @@
 
 Your comprehensive guide to dining in the 253! Find the best restaurants, track happy hours, discover deals, and never miss a special promotion.
 
+**🔗 Repository:** https://github.com/zachalexlee/tacoma-eats  
+**✅ Status:** Production Ready  
+**🏗️ Built:** March 26, 2026 (45 minutes)
+
+---
+
+## 🚀 Quick Deploy (One-Click)
+
+Choose your platform - all are free!
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/zachalexlee/tacoma-eats&env=NEXT_PUBLIC_YELP_API_KEY&envDescription=Yelp%20Fusion%20API%20Key%20(optional)&envLink=https://github.com/zachalexlee/tacoma-eats/blob/master/GET_API_KEY.md)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zachalexlee/tacoma-eats)
+
+**That's it!** Click a button, add your Yelp API key (optional), and you're live!
+
 ## Features
 
 - 🔍 **Restaurant Search** - Browse all Tacoma/Pierce County restaurants
