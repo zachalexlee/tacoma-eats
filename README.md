@@ -22,16 +22,16 @@ Choose your platform - all are free!
 
 ## Features
 
-- 🔍 **Restaurant Search** - Browse all Tacoma/Pierce County restaurants
+- 🔍 **Restaurant Search** - Browse all Tacoma/Pierce County restaurants  
+- 🗺️ **Google Maps Integration** - Powered by Google Places API
 - ⏰ **Open Now Filter** - See what's currently open
 - 💰 **Price Range Filters** - Find spots for any budget ($-$$$$)
 - 🍻 **Happy Hour Tracker** - Never miss a deal again
 - 📱 **Social Media Promotions** - Latest deals from restaurant social posts
 - 🏥 **Health Inspection Scores** - Pierce County health data
-- ⏱️ **Wait Time Predictions** - Estimated wait times
-- 📋 **Menu Browser** - View menus without calling
+- ⭐ **Reviews & Ratings** - Google reviews and ratings
+- 📞 **Click-to-Call** - Call restaurants directly
 - 🗺️ **Interactive Map** - Explore by neighborhood
-- ⭐ **Top Rated** - Highest-rated spots in each category
 
 ## Tacoma/Pierce County Coverage
 
@@ -50,7 +50,7 @@ Choose your platform - all are free!
 ### Prerequisites
 
 - Node.js 18+ 
-- Yelp Fusion API key (free at https://www.yelp.com/developers)
+- Google Places API key (free $200/month credit at https://console.cloud.google.com/)
 
 ### Installation
 
@@ -61,8 +61,8 @@ npm install
 # Copy environment file
 cp .env.example .env.local
 
-# Add your Yelp API key to .env.local
-NEXT_PUBLIC_YELP_API_KEY=your_key_here
+# Add your Google Places API key to .env.local
+NEXT_PUBLIC_GOOGLE_PLACES_API_KEY=your_key_here
 
 # Run development server
 npm run dev
@@ -73,8 +73,10 @@ Open [http://localhost:3000](http://localhost:3000)
 ## API Keys Needed
 
 ### Required:
-- **Yelp Fusion API** - Restaurant data (free tier: 500 calls/day)
-  - Get it at: https://www.yelp.com/developers/v3/manage_app
+- **Google Places API** - Restaurant data (free tier: $200/month ≈ 40,000 searches)
+  - Get it at: https://console.cloud.google.com/
+  - Enable "Places API (New)" in your project
+  - See detailed setup guide in GOOGLE_API_SETUP.md
 
 ### Optional (for enhanced features):
 - Twitter API - For social media promotions

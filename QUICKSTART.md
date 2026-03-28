@@ -19,20 +19,20 @@ The app will show 3 example restaurants with all features working.
 
 ---
 
-## Option 2: Use Real Yelp Data (5 minutes)
+## Option 2: Use Real Google Places Data (10 minutes)
 
-### Step 1: Get Yelp API Key
+### Step 1: Get Google Places API Key
 
-1. Go to https://www.yelp.com/developers
-2. Click "Create App"
-3. Fill out the form:
-   - **App Name:** Tacoma Eats
-   - **Industry:** Other
-   - **Contact Email:** Your email
-   - **Description:** Restaurant discovery for Tacoma
-4. Agree to terms
-5. Click "Create New App"
-6. Copy your **API Key** (starts with `Bearer ...` or just the key string)
+**See the detailed guide:** `GOOGLE_API_SETUP.md` in this folder!
+
+**Quick version:**
+1. Go to https://console.cloud.google.com/
+2. Create new project: "Tacoma Eats"
+3. Enable "Places API (New)"
+4. Enable billing (FREE - $200/month credit!)
+5. Create API key
+6. Restrict the key (security)
+7. Copy your key
 
 ### Step 2: Add API Key to App
 
@@ -45,7 +45,7 @@ nano .env.local
 
 Add your key:
 ```
-NEXT_PUBLIC_YELP_API_KEY=your_actual_api_key_here
+NEXT_PUBLIC_GOOGLE_PLACES_API_KEY=your_actual_api_key_here
 ```
 
 Save and exit (Ctrl+X, Y, Enter)

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Restaurant } from '@/lib/restaurants';
-import { searchRestaurants, getHealthInspection } from '@/lib/yelp';
+import { searchRestaurants, getHealthInspection } from '@/lib/google-places';
 import RestaurantCard from '@/components/RestaurantCard';
 import FilterBar from '@/components/FilterBar';
 import HappyHourTracker from '@/components/HappyHourTracker';
@@ -168,8 +168,8 @@ export default function Home() {
 
     try {
       // Check if API key is configured
-      if (!process.env.NEXT_PUBLIC_YELP_API_KEY) {
-        console.warn('Yelp API key not configured, using mock data');
+      if (!process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY) {
+        console.warn('Google Places API key not configured, using mock data');
         // Filter mock data based on filters
         let filtered = [...MOCK_RESTAURANTS];
         
